@@ -154,275 +154,275 @@ Estimates (updated periodically):
 
 These are functions that do not have a `libgit2` equivalent.
 
-- :heavy_check_mark: `git-object-p`
-- :heavy_check_mark: `git-reference-p`
-- :heavy_check_mark: `git-repository-p`
-- :heavy_check_mark: `git-typeof`
-- :heavy_check_mark: `git-reference-direct-p`
-- :heavy_check_mark: `git-reference-symbolic-p`
+- :heavy_check_mark: `libgit-object-p`
+- :heavy_check_mark: `libgit-reference-p`
+- :heavy_check_mark: `libgit-repository-p`
+- :heavy_check_mark: `libgit-typeof`
+- :heavy_check_mark: `libgit-reference-direct-p`
+- :heavy_check_mark: `libgit-reference-symbolic-p`
 - other type-checking predicates as we add more types
 
 ### annotated
 
-- :x: `git-annotated-commit-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-annotated-commit-from-fetchhead`
-- :interrobang: `git-annotated-commit-from-ref`
-- :interrobang: `git-annotated-commit-from-revspec`
-- :interrobang: `git-annotated-commit-id`
-- :interrobang: `git-annotated-commit-lookup`
+- :x: `libgit-annotated-commit-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-annotated-commit-from-fetchhead`
+- :interrobang: `libgit-annotated-commit-from-ref`
+- :interrobang: `libgit-annotated-commit-from-revspec`
+- :interrobang: `libgit-annotated-commit-id`
+- :interrobang: `libgit-annotated-commit-lookup`
 
 ### attr
 
-- :interrobang: `git-attr-add-macro`
-- :interrobang: `git-attr-cache-flush`
-- :interrobang: `git-attr-foreach`
-- :interrobang: `git-attr-get`
-- :interrobang: `git-attr-get-many`
-- :interrobang: `git-attr-value`
+- :interrobang: `libgit-attr-add-macro`
+- :interrobang: `libgit-attr-cache-flush`
+- :interrobang: `libgit-attr-foreach`
+- :interrobang: `libgit-attr-get`
+- :interrobang: `libgit-attr-get-many`
+- :interrobang: `libgit-attr-value`
 
 ### blame
 
-- :interrobang: `git-blame-buffer`
-- :interrobang: `git-blame-file`
-- :x: `git-blame-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-blame-get-hunk-byindex`
-- :interrobang: `git-blame-get-hunk-byline`
-- :interrobang: `git-blame-get-hunk-count`
-- :interrobang: `git-blame-init-options`
+- :interrobang: `libgit-blame-buffer`
+- :interrobang: `libgit-blame-file`
+- :x: `libgit-blame-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-blame-get-hunk-byindex`
+- :interrobang: `libgit-blame-get-hunk-byline`
+- :interrobang: `libgit-blame-get-hunk-count`
+- :interrobang: `libgit-blame-init-options`
 
 ### blob
 
-- :interrobang: `git-blob-create-frombuffer`
-- :interrobang: `git-blob-create-fromdisk`
-- :interrobang: `git-blob-create-fromstream`
-- :interrobang: `git-blob-create-fromstream-commit`
-- :interrobang: `git-blob-create-fromworkdir`
-- :interrobang: `git-blob-dup`
-- :interrobang: `git-blob-filtered-content`
-- :x: `git-blob-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-blob-id`
-- :interrobang: `git-blob-is-binary`
-- :interrobang: `git-blob-lookup`
-- :interrobang: `git-blob-lookup-prefix`
-- :interrobang: `git-blob-owner`
-- :interrobang: `git-blob-rawcontent`
-- :interrobang: `git-blob-rawsize`
+- :interrobang: `libgit-blob-create-frombuffer`
+- :interrobang: `libgit-blob-create-fromdisk`
+- :interrobang: `libgit-blob-create-fromstream`
+- :interrobang: `libgit-blob-create-fromstream-commit`
+- :interrobang: `libgit-blob-create-fromworkdir`
+- :interrobang: `libgit-blob-dup`
+- :interrobang: `libgit-blob-filtered-content`
+- :x: `libgit-blob-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-blob-id`
+- :interrobang: `libgit-blob-is-binary`
+- :interrobang: `libgit-blob-lookup`
+- :interrobang: `libgit-blob-lookup-prefix`
+- :interrobang: `libgit-blob-owner`
+- :interrobang: `libgit-blob-rawcontent`
+- :interrobang: `libgit-blob-rawsize`
 
 ### branch
 
-- :interrobang: `git-branch-create`
-- :interrobang: `git-branch-create-from-annotated`
-- :interrobang: `git-branch-delete`
-- :interrobang: `git-branch-is-checked-out`
-- :interrobang: `git-branch-is-head`
-- :interrobang: `git-branch-iterator-free`
-- :interrobang: `git-branch-iterator-new`
-- :interrobang: `git-branch-lookup`
-- :interrobang: `git-branch-move`
-- :interrobang: `git-branch-name`
-- :interrobang: `git-branch-next`
-- :interrobang: `git-branch-set-upstream`
-- :interrobang: `git-branch-upstream`
+- :interrobang: `libgit-branch-create`
+- :interrobang: `libgit-branch-create-from-annotated`
+- :interrobang: `libgit-branch-delete`
+- :interrobang: `libgit-branch-is-checked-out`
+- :interrobang: `libgit-branch-is-head`
+- :interrobang: `libgit-branch-iterator-free`
+- :interrobang: `libgit-branch-iterator-new`
+- :interrobang: `libgit-branch-lookup`
+- :interrobang: `libgit-branch-move`
+- :interrobang: `libgit-branch-name`
+- :interrobang: `libgit-branch-next`
+- :interrobang: `libgit-branch-set-upstream`
+- :interrobang: `libgit-branch-upstream`
 
 ### buf
 
 Probably none of these functions are necessary, since we can expose buffers to Emacs as strings.
 
-- :x: `git-buf-contains-nul`
-- :x: `git-buf-free` (memory management shouldn't be exposed to Emacs)
-- :x: `git-buf-grow`
-- :x: `git-buf-is-binary`
-- :x: `git-buf-set`
+- :x: `libgit-buf-contains-nul`
+- :x: `libgit-buf-free` (memory management shouldn't be exposed to Emacs)
+- :x: `libgit-buf-grow`
+- :x: `libgit-buf-is-binary`
+- :x: `libgit-buf-set`
 
 ### checkout
 
-- :interrobang: `git-checkout-head`
-- :interrobang: `git-checkout-index`
-- :interrobang: `git-checkout-init-options`
-- :interrobang: `git-checkout-tree`
+- :interrobang: `libgit-checkout-head`
+- :interrobang: `libgit-checkout-index`
+- :interrobang: `libgit-checkout-init-options`
+- :interrobang: `libgit-checkout-tree`
 
 ### cherrypick
 
-- :interrobang: `git-cherrypick`
-- :interrobang: `git-cherrypick-commit`
-- :interrobang: `git-cherrypick-init-options`
+- :interrobang: `libgit-cherrypick`
+- :interrobang: `libgit-cherrypick-commit`
+- :interrobang: `libgit-cherrypick-init-options`
 
 ### clone
 
-- :heavy_check_mark: `git-clone`
-- :interrobang: `git-clone-init-options`
+- :heavy_check_mark: `libgit-clone`
+- :interrobang: `libgit-clone-init-options`
 
 ### commit
 
-- :interrobang: `git-commit-amend`
-- :interrobang: `git-commit-author`
-- :interrobang: `git-commit-body`
-- :interrobang: `git-commit-committer`
-- :interrobang: `git-commit-create`
-- :interrobang: `git-commit-create-buffer`
-- :interrobang: `git-commit-create-from-callback`
-- :interrobang: `git-commit-create-from-ids`
-- :interrobang: `git-commit-create-v`
-- :interrobang: `git-commit-create-with-signature`
-- :interrobang: `git-commit-dup`
-- :interrobang: `git-commit-extract-signature`
-- :x: `git-commit-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-commit-header-field`
-- :interrobang: `git-commit-id`
-- :interrobang: `git-commit-lookup`
-- :interrobang: `git-commit-lookup-prefix`
-- :interrobang: `git-commit-message`
-- :interrobang: `git-commit-message-encoding`
-- :interrobang: `git-commit-message-raw`
-- :interrobang: `git-commit-nth-gen-ancestor`
-- :interrobang: `git-commit-owner`
-- :interrobang: `git-commit-parent`
-- :interrobang: `git-commit-parent-id`
-- :interrobang: `git-commit-parentcount`
-- :interrobang: `git-commit-raw-header`
-- :interrobang: `git-commit-summary`
-- :interrobang: `git-commit-time`
-- :interrobang: `git-commit-time-offset`
-- :interrobang: `git-commit-tree`
-- :interrobang: `git-commit-tree-id`
+- :interrobang: `libgit-commit-amend`
+- :interrobang: `libgit-commit-author`
+- :interrobang: `libgit-commit-body`
+- :interrobang: `libgit-commit-committer`
+- :interrobang: `libgit-commit-create`
+- :interrobang: `libgit-commit-create-buffer`
+- :interrobang: `libgit-commit-create-from-callback`
+- :interrobang: `libgit-commit-create-from-ids`
+- :interrobang: `libgit-commit-create-v`
+- :interrobang: `libgit-commit-create-with-signature`
+- :interrobang: `libgit-commit-dup`
+- :interrobang: `libgit-commit-extract-signature`
+- :x: `libgit-commit-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-commit-header-field`
+- :interrobang: `libgit-commit-id`
+- :interrobang: `libgit-commit-lookup`
+- :interrobang: `libgit-commit-lookup-prefix`
+- :interrobang: `libgit-commit-message`
+- :interrobang: `libgit-commit-message-encoding`
+- :interrobang: `libgit-commit-message-raw`
+- :interrobang: `libgit-commit-nth-gen-ancestor`
+- :interrobang: `libgit-commit-owner`
+- :interrobang: `libgit-commit-parent`
+- :interrobang: `libgit-commit-parent-id`
+- :interrobang: `libgit-commit-parentcount`
+- :interrobang: `libgit-commit-raw-header`
+- :interrobang: `libgit-commit-summary`
+- :interrobang: `libgit-commit-time`
+- :interrobang: `libgit-commit-time-offset`
+- :interrobang: `libgit-commit-tree`
+- :interrobang: `libgit-commit-tree-id`
 
 ### config
 
-- :interrobang: `git-config-add-backend`
-- :interrobang: `git-config-add-file-ondisk`
-- :interrobang: `git-config-backend-foreach-match`
-- :interrobang: `git-config-delete-entry`
-- :interrobang: `git-config-delete-multivar`
-- :x: `git-config-entry-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-config-find-global`
-- :interrobang: `git-config-find-programdata`
-- :interrobang: `git-config-find-system`
-- :interrobang: `git-config-find-xdg`
-- :interrobang: `git-config-foreach`
-- :interrobang: `git-config-foreach-match`
-- :x: `git-config-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-config-get-bool`
-- :interrobang: `git-config-get-entry`
-- :interrobang: `git-config-get-int32`
-- :interrobang: `git-config-get-int64`
-- :interrobang: `git-config-get-mapped`
-- :interrobang: `git-config-get-multivar-foreach`
-- :interrobang: `git-config-get-path`
-- :interrobang: `git-config-get-string`
-- :interrobang: `git-config-get-string-buf`
-- :interrobang: `git-config-init-backend`
-- :x: `git-config-iterator-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-config-iterator-glob-new`
-- :interrobang: `git-config-iterator-new`
-- :interrobang: `git-config-lock`
-- :interrobang: `git-config-lookup-map-value`
-- :interrobang: `git-config-multivar-iterator-new`
-- :interrobang: `git-config-new`
-- :interrobang: `git-config-next`
-- :interrobang: `git-config-open-default`
-- :interrobang: `git-config-open-global`
-- :interrobang: `git-config-open-level`
-- :interrobang: `git-config-open-ondisk`
-- :interrobang: `git-config-parse-bool`
-- :interrobang: `git-config-parse-int32`
-- :interrobang: `git-config-parse-int64`
-- :interrobang: `git-config-parse-path`
-- :interrobang: `git-config-set-bool`
-- :interrobang: `git-config-set-int32`
-- :interrobang: `git-config-set-int64`
-- :interrobang: `git-config-set-multivar`
-- :interrobang: `git-config-set-string`
-- :interrobang: `git-config-snapshot`
+- :interrobang: `libgit-config-add-backend`
+- :interrobang: `libgit-config-add-file-ondisk`
+- :interrobang: `libgit-config-backend-foreach-match`
+- :interrobang: `libgit-config-delete-entry`
+- :interrobang: `libgit-config-delete-multivar`
+- :x: `libgit-config-entry-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-config-find-global`
+- :interrobang: `libgit-config-find-programdata`
+- :interrobang: `libgit-config-find-system`
+- :interrobang: `libgit-config-find-xdg`
+- :interrobang: `libgit-config-foreach`
+- :interrobang: `libgit-config-foreach-match`
+- :x: `libgit-config-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-config-get-bool`
+- :interrobang: `libgit-config-get-entry`
+- :interrobang: `libgit-config-get-int32`
+- :interrobang: `libgit-config-get-int64`
+- :interrobang: `libgit-config-get-mapped`
+- :interrobang: `libgit-config-get-multivar-foreach`
+- :interrobang: `libgit-config-get-path`
+- :interrobang: `libgit-config-get-string`
+- :interrobang: `libgit-config-get-string-buf`
+- :interrobang: `libgit-config-init-backend`
+- :x: `libgit-config-iterator-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-config-iterator-glob-new`
+- :interrobang: `libgit-config-iterator-new`
+- :interrobang: `libgit-config-lock`
+- :interrobang: `libgit-config-lookup-map-value`
+- :interrobang: `libgit-config-multivar-iterator-new`
+- :interrobang: `libgit-config-new`
+- :interrobang: `libgit-config-next`
+- :interrobang: `libgit-config-open-default`
+- :interrobang: `libgit-config-open-global`
+- :interrobang: `libgit-config-open-level`
+- :interrobang: `libgit-config-open-ondisk`
+- :interrobang: `libgit-config-parse-bool`
+- :interrobang: `libgit-config-parse-int32`
+- :interrobang: `libgit-config-parse-int64`
+- :interrobang: `libgit-config-parse-path`
+- :interrobang: `libgit-config-set-bool`
+- :interrobang: `libgit-config-set-int32`
+- :interrobang: `libgit-config-set-int64`
+- :interrobang: `libgit-config-set-multivar`
+- :interrobang: `libgit-config-set-string`
+- :interrobang: `libgit-config-snapshot`
 
 ### cred
 
-- :interrobang: `git-cred-default-new`
-- :x: `git-cred-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-cred-has-username`
-- :interrobang: `git-cred-ssh-custom-new`
-- :interrobang: `git-cred-ssh-interactive-new`
-- :interrobang: `git-cred-ssh-key-from-agent`
-- :interrobang: `git-cred-ssh-key-memory-new`
-- :interrobang: `git-cred-ssh-key-new`
-- :interrobang: `git-cred-username-new`
-- :interrobang: `git-cred-userpass`
-- :interrobang: `git-cred-userpass-plaintext-new`
+- :interrobang: `libgit-cred-default-new`
+- :x: `libgit-cred-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-cred-has-username`
+- :interrobang: `libgit-cred-ssh-custom-new`
+- :interrobang: `libgit-cred-ssh-interactive-new`
+- :interrobang: `libgit-cred-ssh-key-from-agent`
+- :interrobang: `libgit-cred-ssh-key-memory-new`
+- :interrobang: `libgit-cred-ssh-key-new`
+- :interrobang: `libgit-cred-username-new`
+- :interrobang: `libgit-cred-userpass`
+- :interrobang: `libgit-cred-userpass-plaintext-new`
 
 ### describe
 
-- :interrobang: `git-describe-commit`
-- :interrobang: `git-describe-format`
-- :interrobang: `git-describe-result-free`
-- :interrobang: `git-describe-workdir`
+- :interrobang: `libgit-describe-commit`
+- :interrobang: `libgit-describe-format`
+- :interrobang: `libgit-describe-result-free`
+- :interrobang: `libgit-describe-workdir`
 
 ### diff
 
-- :interrobang: `git-diff-blob-to-buffer`
-- :interrobang: `git-diff-blobs`
-- :interrobang: `git-diff-buffers`
-- :interrobang: `git-diff-commit-as-email`
-- :interrobang: `git-diff-find-init-options`
-- :interrobang: `git-diff-find-similar`
-- :interrobang: `git-diff-foreach`
-- :interrobang: `git-diff-format-email`
-- :interrobang: `git-diff-format-email-init-options`
-- :x: `git-diff-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-diff-from-buffer`
-- :interrobang: `git-diff-get-delta`
-- :interrobang: `git-diff-get-perfdata`
-- :interrobang: `git-diff-get-stats`
-- :interrobang: `git-diff-index-to-index`
-- :interrobang: `git-diff-index-to-workdir`
-- :interrobang: `git-diff-init-options`
-- :interrobang: `git-diff-is-sorted-icase`
-- :interrobang: `git-diff-merge`
-- :interrobang: `git-diff-num-deltas`
-- :interrobang: `git-diff-num-deltas-of-type`
-- :interrobang: `git-diff-patchid`
-- :interrobang: `git-diff-patchid-init-options`
-- :interrobang: `git-diff-print`
-- :interrobang: `git-diff-print-callback--to-buf`
-- :interrobang: `git-diff-print-callback--to-file-handle`
-- :interrobang: `git-diff-stats-deletions`
-- :interrobang: `git-diff-stats-files-changed`
-- :x: `git-diff-stats-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-diff-stats-insertions`
-- :interrobang: `git-diff-stats-to-buf`
-- :interrobang: `git-diff-status-char`
-- :interrobang: `git-diff-to-buf`
-- :interrobang: `git-diff-tree-to-index`
-- :interrobang: `git-diff-tree-to-tree`
-- :interrobang: `git-diff-tree-to-workdir`
-- :interrobang: `git-diff-tree-to-workdir-with-index`
+- :interrobang: `libgit-diff-blob-to-buffer`
+- :interrobang: `libgit-diff-blobs`
+- :interrobang: `libgit-diff-buffers`
+- :interrobang: `libgit-diff-commit-as-email`
+- :interrobang: `libgit-diff-find-init-options`
+- :interrobang: `libgit-diff-find-similar`
+- :interrobang: `libgit-diff-foreach`
+- :interrobang: `libgit-diff-format-email`
+- :interrobang: `libgit-diff-format-email-init-options`
+- :x: `libgit-diff-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-diff-from-buffer`
+- :interrobang: `libgit-diff-get-delta`
+- :interrobang: `libgit-diff-get-perfdata`
+- :interrobang: `libgit-diff-get-stats`
+- :interrobang: `libgit-diff-index-to-index`
+- :interrobang: `libgit-diff-index-to-workdir`
+- :interrobang: `libgit-diff-init-options`
+- :interrobang: `libgit-diff-is-sorted-icase`
+- :interrobang: `libgit-diff-merge`
+- :interrobang: `libgit-diff-num-deltas`
+- :interrobang: `libgit-diff-num-deltas-of-type`
+- :interrobang: `libgit-diff-patchid`
+- :interrobang: `libgit-diff-patchid-init-options`
+- :interrobang: `libgit-diff-print`
+- :interrobang: `libgit-diff-print-callback--to-buf`
+- :interrobang: `libgit-diff-print-callback--to-file-handle`
+- :interrobang: `libgit-diff-stats-deletions`
+- :interrobang: `libgit-diff-stats-files-changed`
+- :x: `libgit-diff-stats-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-diff-stats-insertions`
+- :interrobang: `libgit-diff-stats-to-buf`
+- :interrobang: `libgit-diff-status-char`
+- :interrobang: `libgit-diff-to-buf`
+- :interrobang: `libgit-diff-tree-to-index`
+- :interrobang: `libgit-diff-tree-to-tree`
+- :interrobang: `libgit-diff-tree-to-workdir`
+- :interrobang: `libgit-diff-tree-to-workdir-with-index`
 
 ### fetch
 
-- :interrobang: `git-fetch-init-options`
+- :interrobang: `libgit-fetch-init-options`
 
 ### filter
 
-- :interrobang: `git-filter-init`
-- :interrobang: `git-filter-list-apply-to-blob`
-- :interrobang: `git-filter-list-apply-to-data`
-- :interrobang: `git-filter-list-apply-to-file`
-- :interrobang: `git-filter-list-contains`
-- :x: `git-filter-list-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-filter-list-length`
-- :interrobang: `git-filter-list-load`
-- :interrobang: `git-filter-list-new`
-- :interrobang: `git-filter-list-push`
-- :interrobang: `git-filter-list-stream-blob`
-- :interrobang: `git-filter-list-stream-data`
-- :interrobang: `git-filter-list-stream-file`
-- :interrobang: `git-filter-lookup`
-- :interrobang: `git-filter-register`
-- :interrobang: `git-filter-source-filemode`
-- :interrobang: `git-filter-source-flags`
-- :interrobang: `git-filter-source-id`
-- :interrobang: `git-filter-source-mode`
-- :interrobang: `git-filter-source-path`
-- :interrobang: `git-filter-source-repo`
-- :interrobang: `git-filter-unregister`
+- :interrobang: `libgit-filter-init`
+- :interrobang: `libgit-filter-list-apply-to-blob`
+- :interrobang: `libgit-filter-list-apply-to-data`
+- :interrobang: `libgit-filter-list-apply-to-file`
+- :interrobang: `libgit-filter-list-contains`
+- :x: `libgit-filter-list-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-filter-list-length`
+- :interrobang: `libgit-filter-list-load`
+- :interrobang: `libgit-filter-list-new`
+- :interrobang: `libgit-filter-list-push`
+- :interrobang: `libgit-filter-list-stream-blob`
+- :interrobang: `libgit-filter-list-stream-data`
+- :interrobang: `libgit-filter-list-stream-file`
+- :interrobang: `libgit-filter-lookup`
+- :interrobang: `libgit-filter-register`
+- :interrobang: `libgit-filter-source-filemode`
+- :interrobang: `libgit-filter-source-flags`
+- :interrobang: `libgit-filter-source-id`
+- :interrobang: `libgit-filter-source-mode`
+- :interrobang: `libgit-filter-source-path`
+- :interrobang: `libgit-filter-source-repo`
+- :interrobang: `libgit-filter-unregister`
 
 ### giterr
 
@@ -435,688 +435,688 @@ Probably none of these functions will be necessary, since we expose errors to Em
 
 ### graph
 
-- :interrobang: `git-graph-ahead-behind`
-- :interrobang: `git-graph-descendant-of`
+- :interrobang: `libgit-graph-ahead-behind`
+- :interrobang: `libgit-graph-descendant-of`
 
 ### hashsig
 
-- :interrobang: `git-hashsig-compare`
-- :interrobang: `git-hashsig-create`
-- :interrobang: `git-hashsig-create-fromfile`
-- :x: `git-hashsig-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-hashsig-compare`
+- :interrobang: `libgit-hashsig-create`
+- :interrobang: `libgit-hashsig-create-fromfile`
+- :x: `libgit-hashsig-free` (memory management shouldn't be exposed to Emacs)
 
 ### ignore
 
-- :heavy_check_mark: `git-ignore-add-rule`
-- :heavy_check_mark: `git-ignore-clear-internal-rules`
-- :heavy_check_mark: `git-ignore-path-is-ignored`
+- :heavy_check_mark: `libgit-ignore-add-rule`
+- :heavy_check_mark: `libgit-ignore-clear-internal-rules`
+- :heavy_check_mark: `libgit-ignore-path-is-ignored`
 
 ### index
 
-- :interrobang: `git-index-add`
-- :interrobang: `git-index-add-all`
-- :interrobang: `git-index-add-bypath`
-- :interrobang: `git-index-add-frombuffer`
-- :interrobang: `git-index-caps`
-- :interrobang: `git-index-checksum`
-- :interrobang: `git-index-clear`
-- :interrobang: `git-index-conflict-add`
-- :interrobang: `git-index-conflict-cleanup`
-- :interrobang: `git-index-conflict-get`
-- :interrobang: `git-index-conflict-iterator-free`
-- :interrobang: `git-index-conflict-iterator-new`
-- :interrobang: `git-index-conflict-next`
-- :interrobang: `git-index-conflict-remove`
-- :interrobang: `git-index-entry-is-conflict`
-- :interrobang: `git-index-entry-stage`
-- :interrobang: `git-index-entrycount`
-- :interrobang: `git-index-find`
-- :interrobang: `git-index-find-prefix`
-- :x: `git-index-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-index-get-byindex`
-- :interrobang: `git-index-get-bypath`
-- :interrobang: `git-index-has-conflicts`
-- :interrobang: `git-index-new`
-- :interrobang: `git-index-open`
-- :interrobang: `git-index-owner`
-- :interrobang: `git-index-path`
-- :interrobang: `git-index-read`
-- :interrobang: `git-index-read-tree`
-- :interrobang: `git-index-remove`
-- :interrobang: `git-index-remove-all`
-- :interrobang: `git-index-remove-bypath`
-- :interrobang: `git-index-remove-directory`
-- :interrobang: `git-index-set-caps`
-- :interrobang: `git-index-set-version`
-- :interrobang: `git-index-update-all`
-- :interrobang: `git-index-version`
-- :interrobang: `git-index-write`
-- :interrobang: `git-index-write-tree`
-- :interrobang: `git-index-write-tree-to`
+- :interrobang: `libgit-index-add`
+- :interrobang: `libgit-index-add-all`
+- :interrobang: `libgit-index-add-bypath`
+- :interrobang: `libgit-index-add-frombuffer`
+- :interrobang: `libgit-index-caps`
+- :interrobang: `libgit-index-checksum`
+- :interrobang: `libgit-index-clear`
+- :interrobang: `libgit-index-conflict-add`
+- :interrobang: `libgit-index-conflict-cleanup`
+- :interrobang: `libgit-index-conflict-get`
+- :interrobang: `libgit-index-conflict-iterator-free`
+- :interrobang: `libgit-index-conflict-iterator-new`
+- :interrobang: `libgit-index-conflict-next`
+- :interrobang: `libgit-index-conflict-remove`
+- :interrobang: `libgit-index-entry-is-conflict`
+- :interrobang: `libgit-index-entry-stage`
+- :interrobang: `libgit-index-entrycount`
+- :interrobang: `libgit-index-find`
+- :interrobang: `libgit-index-find-prefix`
+- :x: `libgit-index-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-index-get-byindex`
+- :interrobang: `libgit-index-get-bypath`
+- :interrobang: `libgit-index-has-conflicts`
+- :interrobang: `libgit-index-new`
+- :interrobang: `libgit-index-open`
+- :interrobang: `libgit-index-owner`
+- :interrobang: `libgit-index-path`
+- :interrobang: `libgit-index-read`
+- :interrobang: `libgit-index-read-tree`
+- :interrobang: `libgit-index-remove`
+- :interrobang: `libgit-index-remove-all`
+- :interrobang: `libgit-index-remove-bypath`
+- :interrobang: `libgit-index-remove-directory`
+- :interrobang: `libgit-index-set-caps`
+- :interrobang: `libgit-index-set-version`
+- :interrobang: `libgit-index-update-all`
+- :interrobang: `libgit-index-version`
+- :interrobang: `libgit-index-write`
+- :interrobang: `libgit-index-write-tree`
+- :interrobang: `libgit-index-write-tree-to`
 
 ### indexer
 
-- :interrobang: `git-indexer-append`
-- :interrobang: `git-indexer-commit`
-- :x: `git-indexer-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-indexer-hash`
-- :interrobang: `git-indexer-new`
+- :interrobang: `libgit-indexer-append`
+- :interrobang: `libgit-indexer-commit`
+- :x: `libgit-indexer-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-indexer-hash`
+- :interrobang: `libgit-indexer-new`
 
 ### libgit2
 
-- :interrobang: `git-libgit2-features`
-- :interrobang: `git-libgit2-init`
-- :interrobang: `git-libgit2-opts`
-- :interrobang: `git-libgit2-shutdown`
-- :interrobang: `git-libgit2-version`
+- :interrobang: `libgit-libgit2-features`
+- :interrobang: `libgit-libgit2-init`
+- :interrobang: `libgit-libgit2-opts`
+- :interrobang: `libgit-libgit2-shutdown`
+- :interrobang: `libgit-libgit2-version`
 
 ### mempack
 
-- :interrobang: `git-mempack-dump`
-- :interrobang: `git-mempack-new`
-- :interrobang: `git-mempack-reset`
+- :interrobang: `libgit-mempack-dump`
+- :interrobang: `libgit-mempack-new`
+- :interrobang: `libgit-mempack-reset`
 
 ### merge
 
-- :interrobang: `git-merge`
-- :interrobang: `git-merge-analysis`
-- :interrobang: `git-merge-base`
-- :interrobang: `git-merge-base-many`
-- :interrobang: `git-merge-base-octopus`
-- :interrobang: `git-merge-bases`
-- :interrobang: `git-merge-bases-many`
-- :interrobang: `git-merge-commits`
-- :interrobang: `git-merge-file`
-- :interrobang: `git-merge-file-from-index`
-- :interrobang: `git-merge-file-init-input`
-- :interrobang: `git-merge-file-init-options`
-- :interrobang: `git-merge-file-result-free`
-- :interrobang: `git-merge-init-options`
-- :interrobang: `git-merge-trees`
+- :interrobang: `libgit-merge`
+- :interrobang: `libgit-merge-analysis`
+- :interrobang: `libgit-merge-base`
+- :interrobang: `libgit-merge-base-many`
+- :interrobang: `libgit-merge-base-octopus`
+- :interrobang: `libgit-merge-bases`
+- :interrobang: `libgit-merge-bases-many`
+- :interrobang: `libgit-merge-commits`
+- :interrobang: `libgit-merge-file`
+- :interrobang: `libgit-merge-file-from-index`
+- :interrobang: `libgit-merge-file-init-input`
+- :interrobang: `libgit-merge-file-init-options`
+- :interrobang: `libgit-merge-file-result-free`
+- :interrobang: `libgit-merge-init-options`
+- :interrobang: `libgit-merge-trees`
 
 ### message
 
-- :interrobang: `git-message-prettify`
-- :interrobang: `git-message-trailer-array-free`
-- :interrobang: `git-message-trailers`
+- :interrobang: `libgit-message-prettify`
+- :interrobang: `libgit-message-trailer-array-free`
+- :interrobang: `libgit-message-trailers`
 
 ### note
 
-- :interrobang: `git-note-author`
-- :interrobang: `git-note-commit-create`
-- :interrobang: `git-note-commit-iterator-new`
-- :interrobang: `git-note-commit-read`
-- :interrobang: `git-note-commit-remove`
-- :interrobang: `git-note-committer`
-- :interrobang: `git-note-create`
-- :interrobang: `git-note-foreach`
-- :x: `git-note-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-note-id`
-- :interrobang: `git-note-iterator-free`
-- :interrobang: `git-note-iterator-new`
-- :interrobang: `git-note-message`
-- :interrobang: `git-note-next`
-- :interrobang: `git-note-read`
-- :interrobang: `git-note-remove`
+- :interrobang: `libgit-note-author`
+- :interrobang: `libgit-note-commit-create`
+- :interrobang: `libgit-note-commit-iterator-new`
+- :interrobang: `libgit-note-commit-read`
+- :interrobang: `libgit-note-commit-remove`
+- :interrobang: `libgit-note-committer`
+- :interrobang: `libgit-note-create`
+- :interrobang: `libgit-note-foreach`
+- :x: `libgit-note-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-note-id`
+- :interrobang: `libgit-note-iterator-free`
+- :interrobang: `libgit-note-iterator-new`
+- :interrobang: `libgit-note-message`
+- :interrobang: `libgit-note-next`
+- :interrobang: `libgit-note-read`
+- :interrobang: `libgit-note-remove`
 
 ### object
 
-- :x: `git-object--size` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-object-dup`
-- :x: `git-object-free` (memory management shouldn't be exposed to Emacs)
-- :heavy_check_mark: `git-object-id`
-- :interrobang: `git-object-lookup`
-- :interrobang: `git-object-lookup-bypath`
-- :interrobang: `git-object-lookup-prefix`
-- :interrobang: `git-object-owner`
-- :interrobang: `git-object-peel`
-- :heavy_check_mark: `git-object-short-id`
-- :x: `git-object-string2type` (see below)
-- :x: `git-object-type` (can be covered by a more general `git-typeof` for all opaque user pointers)
-- :x: `git-object-type2string` (see above)
-- :interrobang: `git-object-typeisloose`
+- :x: `libgit-object--size` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-object-dup`
+- :x: `libgit-object-free` (memory management shouldn't be exposed to Emacs)
+- :heavy_check_mark: `libgit-object-id`
+- :interrobang: `libgit-object-lookup`
+- :interrobang: `libgit-object-lookup-bypath`
+- :interrobang: `libgit-object-lookup-prefix`
+- :interrobang: `libgit-object-owner`
+- :interrobang: `libgit-object-peel`
+- :heavy_check_mark: `libgit-object-short-id`
+- :x: `libgit-object-string2type` (see below)
+- :x: `libgit-object-type` (can be covered by a more general `libgit-typeof` for all opaque user pointers)
+- :x: `libgit-object-type2string` (see above)
+- :interrobang: `libgit-object-typeisloose`
 
 ### odb
 
-- :interrobang: `git-odb-add-alternate`
-- :interrobang: `git-odb-add-backend`
-- :interrobang: `git-odb-add-disk-alternate`
-- :interrobang: `git-odb-backend-loose`
-- :interrobang: `git-odb-backend-one-pack`
-- :interrobang: `git-odb-backend-pack`
-- :interrobang: `git-odb-exists`
-- :interrobang: `git-odb-exists-prefix`
-- :interrobang: `git-odb-expand-ids`
-- :interrobang: `git-odb-foreach`
-- :x: `git-odb-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-odb-get-backend`
-- :interrobang: `git-odb-hash`
-- :interrobang: `git-odb-hashfile`
-- :interrobang: `git-odb-init-backend`
-- :interrobang: `git-odb-new`
-- :interrobang: `git-odb-num-backends`
-- :interrobang: `git-odb-object-data`
-- :interrobang: `git-odb-object-dup`
-- :x: `git-odb-object-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-odb-object-id`
-- :interrobang: `git-odb-object-size`
-- :interrobang: `git-odb-object-type`
-- :interrobang: `git-odb-open`
-- :interrobang: `git-odb-open-rstream`
-- :interrobang: `git-odb-open-wstream`
-- :interrobang: `git-odb-read`
-- :interrobang: `git-odb-read-header`
-- :interrobang: `git-odb-read-prefix`
-- :interrobang: `git-odb-refresh`
-- :interrobang: `git-odb-stream-finalize-write`
-- :x: `git-odb-stream-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-odb-stream-read`
-- :interrobang: `git-odb-stream-write`
-- :interrobang: `git-odb-write`
-- :interrobang: `git-odb-write-pack`
+- :interrobang: `libgit-odb-add-alternate`
+- :interrobang: `libgit-odb-add-backend`
+- :interrobang: `libgit-odb-add-disk-alternate`
+- :interrobang: `libgit-odb-backend-loose`
+- :interrobang: `libgit-odb-backend-one-pack`
+- :interrobang: `libgit-odb-backend-pack`
+- :interrobang: `libgit-odb-exists`
+- :interrobang: `libgit-odb-exists-prefix`
+- :interrobang: `libgit-odb-expand-ids`
+- :interrobang: `libgit-odb-foreach`
+- :x: `libgit-odb-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-odb-get-backend`
+- :interrobang: `libgit-odb-hash`
+- :interrobang: `libgit-odb-hashfile`
+- :interrobang: `libgit-odb-init-backend`
+- :interrobang: `libgit-odb-new`
+- :interrobang: `libgit-odb-num-backends`
+- :interrobang: `libgit-odb-object-data`
+- :interrobang: `libgit-odb-object-dup`
+- :x: `libgit-odb-object-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-odb-object-id`
+- :interrobang: `libgit-odb-object-size`
+- :interrobang: `libgit-odb-object-type`
+- :interrobang: `libgit-odb-open`
+- :interrobang: `libgit-odb-open-rstream`
+- :interrobang: `libgit-odb-open-wstream`
+- :interrobang: `libgit-odb-read`
+- :interrobang: `libgit-odb-read-header`
+- :interrobang: `libgit-odb-read-prefix`
+- :interrobang: `libgit-odb-refresh`
+- :interrobang: `libgit-odb-stream-finalize-write`
+- :x: `libgit-odb-stream-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-odb-stream-read`
+- :interrobang: `libgit-odb-stream-write`
+- :interrobang: `libgit-odb-write`
+- :interrobang: `libgit-odb-write-pack`
 
 ### oid
 
 Probably none of these functions will be necessary, since we can expose OIDs to Emacs as strings.
 
-- :x: `git-oid-cmp`
-- :x: `git-oid-cpy`
-- :x: `git-oid-equal`
-- :x: `git-oid-fmt`
-- :x: `git-oid-fromraw`
-- :x: `git-oid-fromstr`
-- :x: `git-oid-fromstrn`
-- :x: `git-oid-fromstrp`
-- :x: `git-oid-iszero`
-- :x: `git-oid-ncmp`
-- :x: `git-oid-nfmt`
-- :x: `git-oid-pathfmt`
-- :x: `git-oid-shorten-add`
-- :x: `git-oid-shorten-free`
-- :x: `git-oid-shorten-new`
-- :x: `git-oid-strcmp`
-- :x: `git-oid-streq`
-- :x: `git-oid-tostr`
-- :x: `git-oid-tostr-s`
+- :x: `libgit-oid-cmp`
+- :x: `libgit-oid-cpy`
+- :x: `libgit-oid-equal`
+- :x: `libgit-oid-fmt`
+- :x: `libgit-oid-fromraw`
+- :x: `libgit-oid-fromstr`
+- :x: `libgit-oid-fromstrn`
+- :x: `libgit-oid-fromstrp`
+- :x: `libgit-oid-iszero`
+- :x: `libgit-oid-ncmp`
+- :x: `libgit-oid-nfmt`
+- :x: `libgit-oid-pathfmt`
+- :x: `libgit-oid-shorten-add`
+- :x: `libgit-oid-shorten-free`
+- :x: `libgit-oid-shorten-new`
+- :x: `libgit-oid-strcmp`
+- :x: `libgit-oid-streq`
+- :x: `libgit-oid-tostr`
+- :x: `libgit-oid-tostr-s`
 
 ### oidarray
 
-- :x: `git-oidarray-free` (memory management shouldn't be exposed to Emacs)
+- :x: `libgit-oidarray-free` (memory management shouldn't be exposed to Emacs)
 
 ### openssl
 
-- :interrobang: `git-openssl-set-locking`
+- :interrobang: `libgit-openssl-set-locking`
 
 ### packbuilder
 
-- :interrobang: `git-packbuilder-foreach`
-- :x: `git-packbuilder-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-packbuilder-hash`
-- :interrobang: `git-packbuilder-insert`
-- :interrobang: `git-packbuilder-insert-commit`
-- :interrobang: `git-packbuilder-insert-recur`
-- :interrobang: `git-packbuilder-insert-tree`
-- :interrobang: `git-packbuilder-insert-walk`
-- :interrobang: `git-packbuilder-new`
-- :interrobang: `git-packbuilder-object-count`
-- :interrobang: `git-packbuilder-set-callbacks`
-- :interrobang: `git-packbuilder-set-threads`
-- :interrobang: `git-packbuilder-write`
-- :interrobang: `git-packbuilder-written`
+- :interrobang: `libgit-packbuilder-foreach`
+- :x: `libgit-packbuilder-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-packbuilder-hash`
+- :interrobang: `libgit-packbuilder-insert`
+- :interrobang: `libgit-packbuilder-insert-commit`
+- :interrobang: `libgit-packbuilder-insert-recur`
+- :interrobang: `libgit-packbuilder-insert-tree`
+- :interrobang: `libgit-packbuilder-insert-walk`
+- :interrobang: `libgit-packbuilder-new`
+- :interrobang: `libgit-packbuilder-object-count`
+- :interrobang: `libgit-packbuilder-set-callbacks`
+- :interrobang: `libgit-packbuilder-set-threads`
+- :interrobang: `libgit-packbuilder-write`
+- :interrobang: `libgit-packbuilder-written`
 
 ### patch
 
-- :x: `git-patch-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-patch-from-blob-and-buffer`
-- :interrobang: `git-patch-from-blobs`
-- :interrobang: `git-patch-from-buffers`
-- :interrobang: `git-patch-from-diff`
-- :interrobang: `git-patch-get-delta`
-- :interrobang: `git-patch-get-hunk`
-- :interrobang: `git-patch-get-line-in-hunk`
-- :interrobang: `git-patch-line-stats`
-- :interrobang: `git-patch-num-hunks`
-- :interrobang: `git-patch-num-lines-in-hunk`
-- :interrobang: `git-patch-print`
-- :interrobang: `git-patch-size`
-- :interrobang: `git-patch-to-buf`
+- :x: `libgit-patch-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-patch-from-blob-and-buffer`
+- :interrobang: `libgit-patch-from-blobs`
+- :interrobang: `libgit-patch-from-buffers`
+- :interrobang: `libgit-patch-from-diff`
+- :interrobang: `libgit-patch-get-delta`
+- :interrobang: `libgit-patch-get-hunk`
+- :interrobang: `libgit-patch-get-line-in-hunk`
+- :interrobang: `libgit-patch-line-stats`
+- :interrobang: `libgit-patch-num-hunks`
+- :interrobang: `libgit-patch-num-lines-in-hunk`
+- :interrobang: `libgit-patch-print`
+- :interrobang: `libgit-patch-size`
+- :interrobang: `libgit-patch-to-buf`
 
 ### pathspec
 
-- :x: `git-pathspec-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-pathspec-match-diff`
-- :interrobang: `git-pathspec-match-index`
-- :interrobang: `git-pathspec-match-list-diff-entry`
-- :interrobang: `git-pathspec-match-list-entry`
-- :interrobang: `git-pathspec-match-list-entrycount`
-- :interrobang: `git-pathspec-match-list-failed-entry`
-- :interrobang: `git-pathspec-match-list-failed-entrycount`
-- :x: `git-pathspec-match-list-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-pathspec-match-tree`
-- :interrobang: `git-pathspec-match-workdir`
-- :interrobang: `git-pathspec-matches-path`
-- :interrobang: `git-pathspec-new`
+- :x: `libgit-pathspec-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-pathspec-match-diff`
+- :interrobang: `libgit-pathspec-match-index`
+- :interrobang: `libgit-pathspec-match-list-diff-entry`
+- :interrobang: `libgit-pathspec-match-list-entry`
+- :interrobang: `libgit-pathspec-match-list-entrycount`
+- :interrobang: `libgit-pathspec-match-list-failed-entry`
+- :interrobang: `libgit-pathspec-match-list-failed-entrycount`
+- :x: `libgit-pathspec-match-list-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-pathspec-match-tree`
+- :interrobang: `libgit-pathspec-match-workdir`
+- :interrobang: `libgit-pathspec-matches-path`
+- :interrobang: `libgit-pathspec-new`
 
 ### proxy
 
-- :interrobang: `git-proxy-init-options`
+- :interrobang: `libgit-proxy-init-options`
 
 ### push
 
-- :interrobang: `git-push-init-options`
+- :interrobang: `libgit-push-init-options`
 
 ### rebase
 
-- :interrobang: `git-rebase-abort`
-- :interrobang: `git-rebase-commit`
-- :interrobang: `git-rebase-finish`
-- :x: `git-rebase-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-rebase-init`
-- :interrobang: `git-rebase-init-options`
-- :interrobang: `git-rebase-inmemory-index`
-- :interrobang: `git-rebase-next`
-- :interrobang: `git-rebase-open`
-- :interrobang: `git-rebase-operation-byindex`
-- :interrobang: `git-rebase-operation-current`
-- :interrobang: `git-rebase-operation-entrycount`
+- :interrobang: `libgit-rebase-abort`
+- :interrobang: `libgit-rebase-commit`
+- :interrobang: `libgit-rebase-finish`
+- :x: `libgit-rebase-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-rebase-init`
+- :interrobang: `libgit-rebase-init-options`
+- :interrobang: `libgit-rebase-inmemory-index`
+- :interrobang: `libgit-rebase-next`
+- :interrobang: `libgit-rebase-open`
+- :interrobang: `libgit-rebase-operation-byindex`
+- :interrobang: `libgit-rebase-operation-current`
+- :interrobang: `libgit-rebase-operation-entrycount`
 
 ### refdb
 
-- :interrobang: `git-refdb-backend-fs`
-- :interrobang: `git-refdb-compress`
-- :x: `git-refdb-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-refdb-init-backend`
-- :interrobang: `git-refdb-new`
-- :interrobang: `git-refdb-open`
-- :interrobang: `git-refdb-set-backend`
+- :interrobang: `libgit-refdb-backend-fs`
+- :interrobang: `libgit-refdb-compress`
+- :x: `libgit-refdb-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-refdb-init-backend`
+- :interrobang: `libgit-refdb-new`
+- :interrobang: `libgit-refdb-open`
+- :interrobang: `libgit-refdb-set-backend`
 
 ### reference
 
-- :x: `git-reference--alloc` (in `sys`)
-- :x: `git-reference--alloc-symbolic` (in `sys`)
-- :interrobang: `git-reference-cmp`
-- :heavy_check_mark: `git-reference-create`
-- :heavy_check_mark: `git-reference-create-matching`
-- :heavy_check_mark: `git-reference-delete`
-- :heavy_check_mark: `git-reference-dup`
-- :heavy_check_mark: `git-reference-dwim`
-- :heavy_check_mark: `git-reference-ensure-log`
-- :interrobang: `git-reference-foreach`
-- :interrobang: `git-reference-foreach-glob`
-- :interrobang: `git-reference-foreach-name`
-- :x: `git-reference-free` (memory management shouldn't be exposed to Emacs)
-- :heavy_check_mark: `git-reference-has-log`
-- :heavy_check_mark: `git-reference-is-branch`
-- :heavy_check_mark: `git-reference-is-note`
-- :heavy_check_mark: `git-reference-is-remote`
-- :heavy_check_mark: `git-reference-is-tag`
-- :heavy_check_mark: `git-reference-is-valid-name`
-- :interrobang: `git-reference-iterator-free`
-- :interrobang: `git-reference-iterator-glob-new`
-- :interrobang: `git-reference-iterator-new`
-- :heavy_check_mark: `git-reference-list`
-- :heavy_check_mark: `git-reference-lookup`
-- :heavy_check_mark: `git-reference-name`
-- :heavy_check_mark: `git-reference-name-to-id`
-- :interrobang: `git-reference-next`
-- :interrobang: `git-reference-next-name`
-- :interrobang: `git-reference-normalize-name`
-- :heavy_check_mark: `git-reference-owner`
-- :heavy_check_mark: `git-reference-peel`
-- :heavy_check_mark: `git-reference-remove`
-- :interrobang: `git-reference-rename`
-- :heavy_check_mark: `git-reference-resolve`
-- :interrobang: `git-reference-set-target`
-- :heavy_check_mark: `git-reference-shorthand`
-- :interrobang: `git-reference-symbolic-create`
-- :interrobang: `git-reference-symbolic-create-matching`
-- :interrobang: `git-reference-symbolic-set-target`
-- :heavy_check_mark: `git-reference-symbolic-target`
-- :heavy_check_mark: `git-reference-target`
-- :heavy_check_mark: `git-reference-target-peel`
-- :heavy_check_mark: `git-reference-type`
+- :x: `libgit-reference--alloc` (in `sys`)
+- :x: `libgit-reference--alloc-symbolic` (in `sys`)
+- :interrobang: `libgit-reference-cmp`
+- :heavy_check_mark: `libgit-reference-create`
+- :heavy_check_mark: `libgit-reference-create-matching`
+- :heavy_check_mark: `libgit-reference-delete`
+- :heavy_check_mark: `libgit-reference-dup`
+- :heavy_check_mark: `libgit-reference-dwim`
+- :heavy_check_mark: `libgit-reference-ensure-log`
+- :interrobang: `libgit-reference-foreach`
+- :interrobang: `libgit-reference-foreach-glob`
+- :interrobang: `libgit-reference-foreach-name`
+- :x: `libgit-reference-free` (memory management shouldn't be exposed to Emacs)
+- :heavy_check_mark: `libgit-reference-has-log`
+- :heavy_check_mark: `libgit-reference-is-branch`
+- :heavy_check_mark: `libgit-reference-is-note`
+- :heavy_check_mark: `libgit-reference-is-remote`
+- :heavy_check_mark: `libgit-reference-is-tag`
+- :heavy_check_mark: `libgit-reference-is-valid-name`
+- :interrobang: `libgit-reference-iterator-free`
+- :interrobang: `libgit-reference-iterator-glob-new`
+- :interrobang: `libgit-reference-iterator-new`
+- :heavy_check_mark: `libgit-reference-list`
+- :heavy_check_mark: `libgit-reference-lookup`
+- :heavy_check_mark: `libgit-reference-name`
+- :heavy_check_mark: `libgit-reference-name-to-id`
+- :interrobang: `libgit-reference-next`
+- :interrobang: `libgit-reference-next-name`
+- :interrobang: `libgit-reference-normalize-name`
+- :heavy_check_mark: `libgit-reference-owner`
+- :heavy_check_mark: `libgit-reference-peel`
+- :heavy_check_mark: `libgit-reference-remove`
+- :interrobang: `libgit-reference-rename`
+- :heavy_check_mark: `libgit-reference-resolve`
+- :interrobang: `libgit-reference-set-target`
+- :heavy_check_mark: `libgit-reference-shorthand`
+- :interrobang: `libgit-reference-symbolic-create`
+- :interrobang: `libgit-reference-symbolic-create-matching`
+- :interrobang: `libgit-reference-symbolic-set-target`
+- :heavy_check_mark: `libgit-reference-symbolic-target`
+- :heavy_check_mark: `libgit-reference-target`
+- :heavy_check_mark: `libgit-reference-target-peel`
+- :heavy_check_mark: `libgit-reference-type`
 
 ### reflog
 
-- :interrobang: `git-reflog-append`
-- :interrobang: `git-reflog-delete`
-- :interrobang: `git-reflog-drop`
-- :interrobang: `git-reflog-entry-byindex`
-- :interrobang: `git-reflog-entry-committer`
-- :interrobang: `git-reflog-entry-id-new`
-- :interrobang: `git-reflog-entry-id-old`
-- :interrobang: `git-reflog-entry-message`
-- :interrobang: `git-reflog-entrycount`
-- :x: `git-reflog-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-reflog-read`
-- :interrobang: `git-reflog-rename`
-- :interrobang: `git-reflog-write`
+- :interrobang: `libgit-reflog-append`
+- :interrobang: `libgit-reflog-delete`
+- :interrobang: `libgit-reflog-drop`
+- :interrobang: `libgit-reflog-entry-byindex`
+- :interrobang: `libgit-reflog-entry-committer`
+- :interrobang: `libgit-reflog-entry-id-new`
+- :interrobang: `libgit-reflog-entry-id-old`
+- :interrobang: `libgit-reflog-entry-message`
+- :interrobang: `libgit-reflog-entrycount`
+- :x: `libgit-reflog-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-reflog-read`
+- :interrobang: `libgit-reflog-rename`
+- :interrobang: `libgit-reflog-write`
 
 ### refspec
 
-- :interrobang: `git-refspec-direction`
-- :interrobang: `git-refspec-dst`
-- :interrobang: `git-refspec-dst-matches`
-- :interrobang: `git-refspec-force`
-- :interrobang: `git-refspec-rtransform`
-- :interrobang: `git-refspec-src`
-- :interrobang: `git-refspec-src-matches`
-- :interrobang: `git-refspec-string`
-- :interrobang: `git-refspec-transform`
+- :interrobang: `libgit-refspec-direction`
+- :interrobang: `libgit-refspec-dst`
+- :interrobang: `libgit-refspec-dst-matches`
+- :interrobang: `libgit-refspec-force`
+- :interrobang: `libgit-refspec-rtransform`
+- :interrobang: `libgit-refspec-src`
+- :interrobang: `libgit-refspec-src-matches`
+- :interrobang: `libgit-refspec-string`
+- :interrobang: `libgit-refspec-transform`
 
 ### remote
 
-- :interrobang: `git-remote-add-fetch`
-- :interrobang: `git-remote-add-push`
-- :interrobang: `git-remote-autotag`
-- :interrobang: `git-remote-connect`
-- :interrobang: `git-remote-connected`
-- :interrobang: `git-remote-create`
-- :interrobang: `git-remote-create-anonymous`
-- :interrobang: `git-remote-create-detached`
-- :interrobang: `git-remote-create-with-fetchspec`
-- :interrobang: `git-remote-default-branch`
-- :interrobang: `git-remote-delete`
-- :interrobang: `git-remote-disconnect`
-- :interrobang: `git-remote-download`
-- :interrobang: `git-remote-dup`
-- :interrobang: `git-remote-fetch`
-- :x: `git-remote-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-remote-get-fetch-refspecs`
-- :interrobang: `git-remote-get-push-refspecs`
-- :interrobang: `git-remote-get-refspec`
-- :interrobang: `git-remote-init-callbacks`
-- :interrobang: `git-remote-is-valid-name`
-- :interrobang: `git-remote-list`
-- :interrobang: `git-remote-lookup`
-- :interrobang: `git-remote-ls`
-- :interrobang: `git-remote-name`
-- :interrobang: `git-remote-owner`
-- :interrobang: `git-remote-prune`
-- :interrobang: `git-remote-prune-refs`
-- :interrobang: `git-remote-push`
-- :interrobang: `git-remote-pushurl`
-- :interrobang: `git-remote-refspec-count`
-- :interrobang: `git-remote-rename`
-- :interrobang: `git-remote-set-autotag`
-- :interrobang: `git-remote-set-pushurl`
-- :interrobang: `git-remote-set-url`
-- :interrobang: `git-remote-stats`
-- :interrobang: `git-remote-stop`
-- :interrobang: `git-remote-update-tips`
-- :interrobang: `git-remote-upload`
-- :interrobang: `git-remote-url`
+- :interrobang: `libgit-remote-add-fetch`
+- :interrobang: `libgit-remote-add-push`
+- :interrobang: `libgit-remote-autotag`
+- :interrobang: `libgit-remote-connect`
+- :interrobang: `libgit-remote-connected`
+- :interrobang: `libgit-remote-create`
+- :interrobang: `libgit-remote-create-anonymous`
+- :interrobang: `libgit-remote-create-detached`
+- :interrobang: `libgit-remote-create-with-fetchspec`
+- :interrobang: `libgit-remote-default-branch`
+- :interrobang: `libgit-remote-delete`
+- :interrobang: `libgit-remote-disconnect`
+- :interrobang: `libgit-remote-download`
+- :interrobang: `libgit-remote-dup`
+- :interrobang: `libgit-remote-fetch`
+- :x: `libgit-remote-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-remote-get-fetch-refspecs`
+- :interrobang: `libgit-remote-get-push-refspecs`
+- :interrobang: `libgit-remote-get-refspec`
+- :interrobang: `libgit-remote-init-callbacks`
+- :interrobang: `libgit-remote-is-valid-name`
+- :interrobang: `libgit-remote-list`
+- :interrobang: `libgit-remote-lookup`
+- :interrobang: `libgit-remote-ls`
+- :interrobang: `libgit-remote-name`
+- :interrobang: `libgit-remote-owner`
+- :interrobang: `libgit-remote-prune`
+- :interrobang: `libgit-remote-prune-refs`
+- :interrobang: `libgit-remote-push`
+- :interrobang: `libgit-remote-pushurl`
+- :interrobang: `libgit-remote-refspec-count`
+- :interrobang: `libgit-remote-rename`
+- :interrobang: `libgit-remote-set-autotag`
+- :interrobang: `libgit-remote-set-pushurl`
+- :interrobang: `libgit-remote-set-url`
+- :interrobang: `libgit-remote-stats`
+- :interrobang: `libgit-remote-stop`
+- :interrobang: `libgit-remote-update-tips`
+- :interrobang: `libgit-remote-upload`
+- :interrobang: `libgit-remote-url`
 
 ### repository
 
-- :x: `git-repository--cleanup` (in `sys`)
-- :heavy_check_mark: `git-repository-commondir`
-- :interrobang: `git-repository-config`
-- :interrobang: `git-repository-config-snapshot`
-- :heavy_check_mark: `git-repository-detach-head`
-- :interrobang: `git-repository-discover`
-- :interrobang: `git-repository-fetchhead-foreach`
-- :x: `git-repository-free` (memory management shouldn't be exposed to Emacs)
-- :heavy_check_mark: `git-repository-get-namespace`
-- :interrobang: `git-repository-hashfile`
-- :heavy_check_mark: `git-repository-head`
-- :heavy_check_mark: `git-repository-head-detached`
-- :heavy_check_mark: `git-repository-head-for-worktree`
-- :heavy_check_mark: `git-repository-head-unborn`
-- :heavy_check_mark: `git-repository-ident`
-- :interrobang: `git-repository-index`
-- :heavy_check_mark: `git-repository-init`
-- :interrobang: `git-repository-init-ext`
-- :interrobang: `git-repository-init-init-options`
-- :heavy_check_mark: `git-repository-is-bare`
-- :heavy_check_mark: `git-repository-is-empty`
-- :heavy_check_mark: `git-repository-is-shallow`
-- :heavy_check_mark: `git-repository-is-worktree`
-- :interrobang: `git-repository-item-path`
-- :interrobang: `git-repository-mergehead-foreach`
-- :heavy_check_mark: `git-repository-message`
-- :heavy_check_mark: `git-repository-message-remove`
-- :x: `git-repository-new` (in `sys`)
-- :interrobang: `git-repository-odb`
-- :heavy_check_mark: `git-repository-open`
-- :heavy_check_mark: `git-repository-open-bare`
-- :interrobang: `git-repository-open-ext`
-- :interrobang: `git-repository-open-from-worktree`
-- :heavy_check_mark: `git-repository-path`
-- :interrobang: `git-repository-refdb`
-- :x: `git-repository-reinit-filesystem` (in `sys`)
-- :x: `git-repository-set-bare` (in `sys`)
-- :x: `git-repository-set-config` (in `sys`)
-- :heavy_check_mark: `git-repository-set-head`
-- :heavy_check_mark: `git-repository-set-head-detached`
-- :interrobang: `git-repository-set-head-detached-from-annotated`
-- :heavy_check_mark: `git-repository-set-ident`
-- :interrobang: `git-repository-set-index`
-- :heavy_check_mark: `git-repository-set-namespace`
-- :interrobang: `git-repository-set-odb`
-- :interrobang: `git-repository-set-refdb`
-- :heavy_check_mark: `git-repository-set-workdir`
-- :heavy_check_mark: `git-repository-state`
-- :heavy_check_mark: `git-repository-state-cleanup`
-- :x: `git-repository-submodule-cache-all` (in `sys`)
-- :x: `git-repository-submodule-cache-clear` (in `sys`)
-- :heavy_check_mark: `git-repository-workdir`
-- :interrobang: `git-repository-wrap-odb`
+- :x: `libgit-repository--cleanup` (in `sys`)
+- :heavy_check_mark: `libgit-repository-commondir`
+- :interrobang: `libgit-repository-config`
+- :interrobang: `libgit-repository-config-snapshot`
+- :heavy_check_mark: `libgit-repository-detach-head`
+- :interrobang: `libgit-repository-discover`
+- :interrobang: `libgit-repository-fetchhead-foreach`
+- :x: `libgit-repository-free` (memory management shouldn't be exposed to Emacs)
+- :heavy_check_mark: `libgit-repository-get-namespace`
+- :interrobang: `libgit-repository-hashfile`
+- :heavy_check_mark: `libgit-repository-head`
+- :heavy_check_mark: `libgit-repository-head-detached`
+- :heavy_check_mark: `libgit-repository-head-for-worktree`
+- :heavy_check_mark: `libgit-repository-head-unborn`
+- :heavy_check_mark: `libgit-repository-ident`
+- :interrobang: `libgit-repository-index`
+- :heavy_check_mark: `libgit-repository-init`
+- :interrobang: `libgit-repository-init-ext`
+- :interrobang: `libgit-repository-init-init-options`
+- :heavy_check_mark: `libgit-repository-is-bare`
+- :heavy_check_mark: `libgit-repository-is-empty`
+- :heavy_check_mark: `libgit-repository-is-shallow`
+- :heavy_check_mark: `libgit-repository-is-worktree`
+- :interrobang: `libgit-repository-item-path`
+- :interrobang: `libgit-repository-mergehead-foreach`
+- :heavy_check_mark: `libgit-repository-message`
+- :heavy_check_mark: `libgit-repository-message-remove`
+- :x: `libgit-repository-new` (in `sys`)
+- :interrobang: `libgit-repository-odb`
+- :heavy_check_mark: `libgit-repository-open`
+- :heavy_check_mark: `libgit-repository-open-bare`
+- :interrobang: `libgit-repository-open-ext`
+- :interrobang: `libgit-repository-open-from-worktree`
+- :heavy_check_mark: `libgit-repository-path`
+- :interrobang: `libgit-repository-refdb`
+- :x: `libgit-repository-reinit-filesystem` (in `sys`)
+- :x: `libgit-repository-set-bare` (in `sys`)
+- :x: `libgit-repository-set-config` (in `sys`)
+- :heavy_check_mark: `libgit-repository-set-head`
+- :heavy_check_mark: `libgit-repository-set-head-detached`
+- :interrobang: `libgit-repository-set-head-detached-from-annotated`
+- :heavy_check_mark: `libgit-repository-set-ident`
+- :interrobang: `libgit-repository-set-index`
+- :heavy_check_mark: `libgit-repository-set-namespace`
+- :interrobang: `libgit-repository-set-odb`
+- :interrobang: `libgit-repository-set-refdb`
+- :heavy_check_mark: `libgit-repository-set-workdir`
+- :heavy_check_mark: `libgit-repository-state`
+- :heavy_check_mark: `libgit-repository-state-cleanup`
+- :x: `libgit-repository-submodule-cache-all` (in `sys`)
+- :x: `libgit-repository-submodule-cache-clear` (in `sys`)
+- :heavy_check_mark: `libgit-repository-workdir`
+- :interrobang: `libgit-repository-wrap-odb`
 
 ### reset
 
-- :interrobang: `git-reset`
-- :interrobang: `git-reset-default`
-- :interrobang: `git-reset-from-annotated`
+- :interrobang: `libgit-reset`
+- :interrobang: `libgit-reset-default`
+- :interrobang: `libgit-reset-from-annotated`
 
 ### revert
 
-- :interrobang: `git-revert`
-- :interrobang: `git-revert-commit`
-- :interrobang: `git-revert-init-options`
+- :interrobang: `libgit-revert`
+- :interrobang: `libgit-revert-commit`
+- :interrobang: `libgit-revert-init-options`
 
 ### revparse
 
-- :interrobang: `git-revparse`
-- :interrobang: `git-revparse-ext`
-- :heavy_check_mark: `git-revparse-single`
+- :interrobang: `libgit-revparse`
+- :interrobang: `libgit-revparse-ext`
+- :heavy_check_mark: `libgit-revparse-single`
 
 ### revwalk
 
-- :interrobang: `git-revwalk-add-hide-cb`
-- :x: `git-revwalk-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-revwalk-hide`
-- :interrobang: `git-revwalk-hide-glob`
-- :interrobang: `git-revwalk-hide-head`
-- :interrobang: `git-revwalk-hide-ref`
-- :interrobang: `git-revwalk-new`
-- :interrobang: `git-revwalk-next`
-- :interrobang: `git-revwalk-push`
-- :interrobang: `git-revwalk-push-glob`
-- :interrobang: `git-revwalk-push-head`
-- :interrobang: `git-revwalk-push-range`
-- :interrobang: `git-revwalk-push-ref`
-- :interrobang: `git-revwalk-repository`
-- :interrobang: `git-revwalk-reset`
-- :interrobang: `git-revwalk-simplify-first-parent`
-- :interrobang: `git-revwalk-sorting`
+- :interrobang: `libgit-revwalk-add-hide-cb`
+- :x: `libgit-revwalk-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-revwalk-hide`
+- :interrobang: `libgit-revwalk-hide-glob`
+- :interrobang: `libgit-revwalk-hide-head`
+- :interrobang: `libgit-revwalk-hide-ref`
+- :interrobang: `libgit-revwalk-new`
+- :interrobang: `libgit-revwalk-next`
+- :interrobang: `libgit-revwalk-push`
+- :interrobang: `libgit-revwalk-push-glob`
+- :interrobang: `libgit-revwalk-push-head`
+- :interrobang: `libgit-revwalk-push-range`
+- :interrobang: `libgit-revwalk-push-ref`
+- :interrobang: `libgit-revwalk-repository`
+- :interrobang: `libgit-revwalk-reset`
+- :interrobang: `libgit-revwalk-simplify-first-parent`
+- :interrobang: `libgit-revwalk-sorting`
 
 ### signature
 
-- :interrobang: `git-signature-default`
-- :interrobang: `git-signature-dup`
-- :x: `git-signature-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-signature-from-buffer`
-- :interrobang: `git-signature-new`
-- :interrobang: `git-signature-now`
+- :interrobang: `libgit-signature-default`
+- :interrobang: `libgit-signature-dup`
+- :x: `libgit-signature-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-signature-from-buffer`
+- :interrobang: `libgit-signature-new`
+- :interrobang: `libgit-signature-now`
 
 ### smart
 
-- :interrobang: `git-smart-subtransport-git`
-- :interrobang: `git-smart-subtransport-http`
-- :interrobang: `git-smart-subtransport-ssh`
+- :interrobang: `libgit-smart-subtransport-git`
+- :interrobang: `libgit-smart-subtransport-http`
+- :interrobang: `libgit-smart-subtransport-ssh`
 
 ### stash
 
-- :interrobang: `git-stash-apply`
-- :interrobang: `git-stash-apply-init-options`
-- :interrobang: `git-stash-drop`
-- :interrobang: `git-stash-foreach`
-- :interrobang: `git-stash-pop`
+- :interrobang: `libgit-stash-apply`
+- :interrobang: `libgit-stash-apply-init-options`
+- :interrobang: `libgit-stash-drop`
+- :interrobang: `libgit-stash-foreach`
+- :interrobang: `libgit-stash-pop`
 
 ### status
 
-- :interrobang: `git-status-byindex`
-- :heavy_check_mark: `git-status-file`
-- :heavy_check_mark: `git-status-foreach`
-- :heavy_check_mark: `git-status-foreach-ext`
-- :x: `git-status-init-options`
-- :interrobang: `git-status-list-entrycount`
-- :interrobang: `git-status-list-free`
-- :interrobang: `git-status-list-get-perfdata`
-- :interrobang: `git-status-list-new`
-- :heavy_check_mark: `git-status-should-ignore`
+- :interrobang: `libgit-status-byindex`
+- :heavy_check_mark: `libgit-status-file`
+- :heavy_check_mark: `libgit-status-foreach`
+- :heavy_check_mark: `libgit-status-foreach-ext`
+- :x: `libgit-status-init-options`
+- :interrobang: `libgit-status-list-entrycount`
+- :interrobang: `libgit-status-list-free`
+- :interrobang: `libgit-status-list-get-perfdata`
+- :interrobang: `libgit-status-list-new`
+- :heavy_check_mark: `libgit-status-should-ignore`
 
 ### strarray
 
-- :x: `git-strarray-copy`
-- :x: `git-strarray-free` (memory management shouldn't be exposed to Emacs)
+- :x: `libgit-strarray-copy`
+- :x: `libgit-strarray-free` (memory management shouldn't be exposed to Emacs)
 
 ### stream
 
-- :interrobang: `git-stream-register-tls`
+- :interrobang: `libgit-stream-register-tls`
 
 ### submodule
 
-- :interrobang: `git-submodule-add-finalize`
-- :interrobang: `git-submodule-add-setup`
-- :interrobang: `git-submodule-add-to-index`
-- :interrobang: `git-submodule-branch`
-- :interrobang: `git-submodule-fetch-recurse-submodules`
-- :interrobang: `git-submodule-foreach`
-- :x: `git-submodule-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-submodule-head-id`
-- :interrobang: `git-submodule-ignore`
-- :interrobang: `git-submodule-index-id`
-- :interrobang: `git-submodule-init`
-- :interrobang: `git-submodule-location`
-- :interrobang: `git-submodule-lookup`
-- :interrobang: `git-submodule-name`
-- :interrobang: `git-submodule-open`
-- :interrobang: `git-submodule-owner`
-- :interrobang: `git-submodule-path`
-- :interrobang: `git-submodule-reload`
-- :interrobang: `git-submodule-repo-init`
-- :interrobang: `git-submodule-resolve-url`
-- :interrobang: `git-submodule-set-branch`
-- :interrobang: `git-submodule-set-fetch-recurse-submodules`
-- :interrobang: `git-submodule-set-ignore`
-- :interrobang: `git-submodule-set-update`
-- :interrobang: `git-submodule-set-url`
-- :interrobang: `git-submodule-status`
-- :interrobang: `git-submodule-sync`
-- :interrobang: `git-submodule-update`
-- :interrobang: `git-submodule-update-init-options`
-- :interrobang: `git-submodule-update-strategy`
-- :interrobang: `git-submodule-url`
-- :interrobang: `git-submodule-wd-id`
+- :interrobang: `libgit-submodule-add-finalize`
+- :interrobang: `libgit-submodule-add-setup`
+- :interrobang: `libgit-submodule-add-to-index`
+- :interrobang: `libgit-submodule-branch`
+- :interrobang: `libgit-submodule-fetch-recurse-submodules`
+- :interrobang: `libgit-submodule-foreach`
+- :x: `libgit-submodule-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-submodule-head-id`
+- :interrobang: `libgit-submodule-ignore`
+- :interrobang: `libgit-submodule-index-id`
+- :interrobang: `libgit-submodule-init`
+- :interrobang: `libgit-submodule-location`
+- :interrobang: `libgit-submodule-lookup`
+- :interrobang: `libgit-submodule-name`
+- :interrobang: `libgit-submodule-open`
+- :interrobang: `libgit-submodule-owner`
+- :interrobang: `libgit-submodule-path`
+- :interrobang: `libgit-submodule-reload`
+- :interrobang: `libgit-submodule-repo-init`
+- :interrobang: `libgit-submodule-resolve-url`
+- :interrobang: `libgit-submodule-set-branch`
+- :interrobang: `libgit-submodule-set-fetch-recurse-submodules`
+- :interrobang: `libgit-submodule-set-ignore`
+- :interrobang: `libgit-submodule-set-update`
+- :interrobang: `libgit-submodule-set-url`
+- :interrobang: `libgit-submodule-status`
+- :interrobang: `libgit-submodule-sync`
+- :interrobang: `libgit-submodule-update`
+- :interrobang: `libgit-submodule-update-init-options`
+- :interrobang: `libgit-submodule-update-strategy`
+- :interrobang: `libgit-submodule-url`
+- :interrobang: `libgit-submodule-wd-id`
 
 ### tag
 
-- :interrobang: `git-tag-annotation-create`
-- :interrobang: `git-tag-create`
-- :interrobang: `git-tag-create-frombuffer`
-- :interrobang: `git-tag-create-lightweight`
-- :interrobang: `git-tag-delete`
-- :interrobang: `git-tag-dup`
-- :interrobang: `git-tag-foreach`
-- :x: `git-tag-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-tag-id`
-- :interrobang: `git-tag-list`
-- :interrobang: `git-tag-list-match`
-- :interrobang: `git-tag-lookup`
-- :interrobang: `git-tag-lookup-prefix`
-- :interrobang: `git-tag-message`
-- :interrobang: `git-tag-name`
-- :interrobang: `git-tag-owner`
-- :interrobang: `git-tag-peel`
-- :interrobang: `git-tag-tagger`
-- :interrobang: `git-tag-target`
-- :interrobang: `git-tag-target-id`
-- :interrobang: `git-tag-target-type`
+- :interrobang: `libgit-tag-annotation-create`
+- :interrobang: `libgit-tag-create`
+- :interrobang: `libgit-tag-create-frombuffer`
+- :interrobang: `libgit-tag-create-lightweight`
+- :interrobang: `libgit-tag-delete`
+- :interrobang: `libgit-tag-dup`
+- :interrobang: `libgit-tag-foreach`
+- :x: `libgit-tag-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-tag-id`
+- :interrobang: `libgit-tag-list`
+- :interrobang: `libgit-tag-list-match`
+- :interrobang: `libgit-tag-lookup`
+- :interrobang: `libgit-tag-lookup-prefix`
+- :interrobang: `libgit-tag-message`
+- :interrobang: `libgit-tag-name`
+- :interrobang: `libgit-tag-owner`
+- :interrobang: `libgit-tag-peel`
+- :interrobang: `libgit-tag-tagger`
+- :interrobang: `libgit-tag-target`
+- :interrobang: `libgit-tag-target-id`
+- :interrobang: `libgit-tag-target-type`
 
 ### time
 
-- :interrobang: `git-time-monotonic`
+- :interrobang: `libgit-time-monotonic`
 
 ### trace
 
-- :interrobang: `git-trace-set`
+- :interrobang: `libgit-trace-set`
 
 ### transport
 
-- :interrobang: `git-transport-dummy`
-- :interrobang: `git-transport-init`
-- :interrobang: `git-transport-local`
-- :interrobang: `git-transport-new`
-- :interrobang: `git-transport-register`
-- :interrobang: `git-transport-smart`
-- :interrobang: `git-transport-smart-certificate-check`
-- :interrobang: `git-transport-smart-credentials`
-- :interrobang: `git-transport-smart-proxy-options`
-- :interrobang: `git-transport-ssh-with-paths`
-- :interrobang: `git-transport-unregister`
+- :interrobang: `libgit-transport-dummy`
+- :interrobang: `libgit-transport-init`
+- :interrobang: `libgit-transport-local`
+- :interrobang: `libgit-transport-new`
+- :interrobang: `libgit-transport-register`
+- :interrobang: `libgit-transport-smart`
+- :interrobang: `libgit-transport-smart-certificate-check`
+- :interrobang: `libgit-transport-smart-credentials`
+- :interrobang: `libgit-transport-smart-proxy-options`
+- :interrobang: `libgit-transport-ssh-with-paths`
+- :interrobang: `libgit-transport-unregister`
 
 ### tree
 
-- :interrobang: `git-tree-create-updated`
-- :interrobang: `git-tree-dup`
-- :interrobang: `git-tree-entry-byid`
-- :interrobang: `git-tree-entry-byindex`
-- :interrobang: `git-tree-entry-byname`
-- :interrobang: `git-tree-entry-bypath`
-- :interrobang: `git-tree-entry-cmp`
-- :interrobang: `git-tree-entry-dup`
-- :interrobang: `git-tree-entry-filemode`
-- :interrobang: `git-tree-entry-filemode-raw`
-- :interrobang: `git-tree-entry-free`
-- :interrobang: `git-tree-entry-id`
-- :interrobang: `git-tree-entry-name`
-- :interrobang: `git-tree-entry-to-object`
-- :interrobang: `git-tree-entry-type`
-- :interrobang: `git-tree-entrycount`
-- :x: `git-tree-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-tree-id`
-- :interrobang: `git-tree-lookup`
-- :interrobang: `git-tree-lookup-prefix`
-- :interrobang: `git-tree-owner`
-- :interrobang: `git-tree-walk`
+- :interrobang: `libgit-tree-create-updated`
+- :interrobang: `libgit-tree-dup`
+- :interrobang: `libgit-tree-entry-byid`
+- :interrobang: `libgit-tree-entry-byindex`
+- :interrobang: `libgit-tree-entry-byname`
+- :interrobang: `libgit-tree-entry-bypath`
+- :interrobang: `libgit-tree-entry-cmp`
+- :interrobang: `libgit-tree-entry-dup`
+- :interrobang: `libgit-tree-entry-filemode`
+- :interrobang: `libgit-tree-entry-filemode-raw`
+- :interrobang: `libgit-tree-entry-free`
+- :interrobang: `libgit-tree-entry-id`
+- :interrobang: `libgit-tree-entry-name`
+- :interrobang: `libgit-tree-entry-to-object`
+- :interrobang: `libgit-tree-entry-type`
+- :interrobang: `libgit-tree-entrycount`
+- :x: `libgit-tree-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-tree-id`
+- :interrobang: `libgit-tree-lookup`
+- :interrobang: `libgit-tree-lookup-prefix`
+- :interrobang: `libgit-tree-owner`
+- :interrobang: `libgit-tree-walk`
 
 ### treebuilder
 
-- :interrobang: `git-treebuilder-clear`
-- :interrobang: `git-treebuilder-entrycount`
-- :interrobang: `git-treebuilder-filter`
-- :x: `git-treebuilder-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-treebuilder-get`
-- :interrobang: `git-treebuilder-insert`
-- :interrobang: `git-treebuilder-new`
-- :interrobang: `git-treebuilder-remove`
-- :interrobang: `git-treebuilder-write`
-- :interrobang: `git-treebuilder-write-with-buffer`
+- :interrobang: `libgit-treebuilder-clear`
+- :interrobang: `libgit-treebuilder-entrycount`
+- :interrobang: `libgit-treebuilder-filter`
+- :x: `libgit-treebuilder-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-treebuilder-get`
+- :interrobang: `libgit-treebuilder-insert`
+- :interrobang: `libgit-treebuilder-new`
+- :interrobang: `libgit-treebuilder-remove`
+- :interrobang: `libgit-treebuilder-write`
+- :interrobang: `libgit-treebuilder-write-with-buffer`
 
 ### worktree
 
-- :interrobang: `git-worktree-add`
-- :interrobang: `git-worktree-add-init-options`
-- :x: `git-worktree-free` (memory management shouldn't be exposed to Emacs)
-- :interrobang: `git-worktree-is-locked`
-- :interrobang: `git-worktree-is-prunable`
-- :interrobang: `git-worktree-list`
-- :interrobang: `git-worktree-lock`
-- :interrobang: `git-worktree-lookup`
-- :interrobang: `git-worktree-open-from-repository`
-- :interrobang: `git-worktree-prune`
-- :interrobang: `git-worktree-prune-init-options`
-- :interrobang: `git-worktree-unlock`
-- :interrobang: `git-worktree-validate`
+- :interrobang: `libgit-worktree-add`
+- :interrobang: `libgit-worktree-add-init-options`
+- :x: `libgit-worktree-free` (memory management shouldn't be exposed to Emacs)
+- :interrobang: `libgit-worktree-is-locked`
+- :interrobang: `libgit-worktree-is-prunable`
+- :interrobang: `libgit-worktree-list`
+- :interrobang: `libgit-worktree-lock`
+- :interrobang: `libgit-worktree-lookup`
+- :interrobang: `libgit-worktree-open-from-repository`
+- :interrobang: `libgit-worktree-prune`
+- :interrobang: `libgit-worktree-prune-init-options`
+- :interrobang: `libgit-worktree-unlock`
+- :interrobang: `libgit-worktree-validate`
