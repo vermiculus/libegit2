@@ -147,7 +147,7 @@ endif
 
 install_emacs:
 	@echo "Install Emacs $(EMACS_VERSION)"
-	@make -j$(MAKE_JOBS) -C "$(EMACS_DIR)" V=0 install $(SILENT)
+	@$(MAKE) -j$(MAKE_JOBS) -C "$(EMACS_DIR)" V=0 install $(SILENT)
 ifeq ($(TRAVIS_OS_NAME),osx)
 #	To pretend that an up-to-date emacs exists in $HOME/bin, we must link it out of Emacs.app
 	@mkdir -p "$(HOME)/bin"
@@ -175,7 +175,7 @@ install_texinfo:
 # Patching Makefile to inhibit unexpected warnings.
 # See: https://github.com/flycheck/emacs-travis/pull/9
 	@sed -i -e "s/^CFLAGS =\(.*\)/CFLAGS = \1 -Wno-unused-result/g" "/tmp/texinfo-$(TEXINFO_VERSION)/info/Makefile"
-	@make -j$(MAKE_JOBS) -C "/tmp/texinfo-$(TEXINFO_VERSION)" V=0 install $(SILENT)
+	@$(MAKE) -j$(MAKE_JOBS) -C "/tmp/texinfo-$(TEXINFO_VERSION)" V=0 install $(SILENT)
 
 test:
 	bundle exec rspec --color --format doc
