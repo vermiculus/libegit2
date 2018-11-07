@@ -25,11 +25,7 @@ EMACS_VERSION ?= 25.3
 VERBOSE ?= no
 MAKE_JOBS ?= 2
 
-ifeq ($(VERBOSE),yes)
 SILENT=
-else
-SILENT=> /dev/null
-endif
 
 # Tear the version apart
 VERSION_PARTS := $(subst -, ,$(EMACS_VERSION))
@@ -135,7 +131,7 @@ clone_emacs_snapshot:
 
 configure_emacs:
 	@echo "Configure Emacs $(EMACS_VERSION)"
-	@cd "$(EMACS_DIR)" && ./configure $(CONFIGUREFLAGS) $(EMACSCONFFLAGS) $(SILENT)
+	@cd "$(EMACS_DIR)" && ./configure $(CONFIGUREFLAGS) $(EMACSCONFFLAGS)
 
 ifeq ($(EMACS_VERSION),snapshot)
 EMACS_DIR = /tmp/emacs
@@ -147,7 +143,7 @@ endif
 
 install_emacs:
 	@echo "Install Emacs $(EMACS_VERSION)"
-	@make -j$(MAKE_JOBS) -C "$(EMACS_DIR)" V=0 install $(SILENT)
+	@make -j$(MAKE_JOBS) -C "$(EMACS_DIR)" V=0 install
 ifeq ($(TRAVIS_OS_NAME),osx)
 #	To pretend that an up-to-date emacs exists in $HOME/bin, we must link it out of Emacs.app
 	@mkdir -p "$(HOME)/bin"
@@ -175,7 +171,7 @@ install_texinfo:
 # Patching Makefile to inhibit unexpected warnings.
 # See: https://github.com/flycheck/emacs-travis/pull/9
 	@sed -i -e "s/^CFLAGS =\(.*\)/CFLAGS = \1 -Wno-unused-result/g" "/tmp/texinfo-$(TEXINFO_VERSION)/info/Makefile"
-	@make -j$(MAKE_JOBS) -C "/tmp/texinfo-$(TEXINFO_VERSION)" V=0 install $(SILENT)
+	make -j$(MAKE_JOBS) -C "/tmp/texinfo-$(TEXINFO_VERSION)" V=0 install
 
 test:
 	bundle exec rspec --color --format doc
