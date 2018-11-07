@@ -26,10 +26,10 @@ matrix:
     - env: EMACS_VERSION=snapshot
 
 before_install:
-  - $MAKE emake.mk
-  - $MAKE emacs
+  - $MAKE -w emake.mk
+  - $MAKE -w emacs
 
 script:
-  - $MAKE build/libegit2.so
-  - $MAKE compile
-  - $MAKE test
+  - $MAKE -w build/libegit2.so
+  - $MAKE -w compile
+  - $MAKE -w test
