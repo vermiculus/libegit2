@@ -114,4 +114,4 @@ emacs: $(EMAKE_WORKDIR)/emake.el
 
 install-emacs: $(EMAKE_WORKDIR)/emacs-travis.mk
 	export PATH="$(HOME)/bin:$(PATH)"
-	make -f '$(EMAKE_WORKDIR)/emacs-travis.mk' install_emacs
+	$(MAKE) -f '$(EMAKE_WORKDIR)/emacs-travis.mk' install_emacs
