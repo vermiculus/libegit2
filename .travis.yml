@@ -2,6 +2,14 @@ language: generic
 sudo: required
 dist: trusty
 
+addons:
+  homebrew:
+    packages:
+      - autoconf
+      - automake
+      - gnutls
+      - texinfo
+
 os:
   - linux
   - osx
@@ -13,8 +21,9 @@ cache:
 env:
   global:
     - PATH="$HOME/bin:$PATH"
-    - MAKE="make -f .travis.mk"
-    - EMAKE_SHA1=1b23379eb5a9f82d3e2d227d0f217864e40f23e0
+    - EMAKE_SHA1=5bc70de1b562c1e5196e10a75df2a89f2e016de9
+    - EMACS_DIR="$HOME/emacs"
+    - EMACS="$HOME/emacs/src/emacs"
   matrix:
     - EMACS_VERSION=25.3
     - EMACS_VERSION=26.1
@@ -26,10 +35,10 @@ matrix:
     - env: EMACS_VERSION=snapshot
 
 before_install:
-  - $MAKE emake.mk
-  - $MAKE emacs
+  - make -f .travis.mk setup
+  - make -f .travis.mk info
 
 script:
-  - $MAKE build/libegit2.so
-  - $MAKE compile
-  - $MAKE test
+  - make -f .travis.mk build/libegit2.so
+  - make -f .travis.mk compile
+  - make -f .travis.mk test
